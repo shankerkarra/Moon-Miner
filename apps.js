@@ -251,11 +251,6 @@ function displayInventory() {
   }
 
   displaybtnInfo();
-
-  // document.getElementById("manual1").innerHTML = "M:" + manualUpgrades.manualclick1.multiplier + " B:" + manualUpgrades.manualclick1.bonus;
-  // document.getElementById("manual2").innerHTML = "M:" + manualUpgrades.manualclick2.multiplier;
-  // document.getElementById("auto1").innerHTML = "M:" + autoClick1multiplier;
-  // document.getElementById("auto2").innerHTML = "M:" + autoClick2multiplier;
 }
 
 function displaybtnInfo() {
