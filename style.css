@@ -1,0 +1,28 @@
+/* *{
+  outline: 1px solid red;
+} */
+
+/* @media(max-width: 500px) {
+  .col-sm-4 {
+    height: 50px;
+	width: 50px;
+  }
+} */
+
+body {
+   background: url('./assets/imgs/Galaxy.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.img{
+  width: 200px;
+  height: 200px;
+  border-style: groove;
+}
+
+.btninfo{
+width: 100%;
+}
