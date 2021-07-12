@@ -30,13 +30,6 @@ var autoClick2Price = -20;
 var _quantityAutoClick2 = 0;
 var autoClick2multiplier = 4;
 
-//this var is used to break the loop for auto increment after clicking autoclicks
-var functionout;
-
-//define seconds here for autoclicks
-var setTimeAutoClick1 = 1;
-var setTimeAutoClick2 = 3;
-
 let manualUpgrades = {
   manualclick1: {
     price: manualClick1Price,
@@ -93,7 +86,6 @@ function manualupgrade(manualclick1) {
       if (x.quantity >= m1) { incrementcheese(manualClick1Bonus) }
       localStorage.setItem("_quantityManualClick1", _quantityManualClick1);
     }
-    //  document.getElementById("manual1").innerHTML = "M:" + m1 + " B:" + manualClick1Bonus;
   }
 
   if (manualclick1 == 'manualclick2') {
@@ -115,8 +107,6 @@ function manualupgrade(manualclick1) {
       x.quantity = _quantityManualClick2;
       localStorage.setItem("_quantityManualClick2", _quantityManualClick2);
     }
-    //   document.getElementById("manual2").innerHTML = "M:" + m2;
-
   }
 
   if (manualclick1 == 'autoclick2') {
@@ -134,7 +124,6 @@ function manualupgrade(manualclick1) {
       x.quantity = _quantityAutoClick2;
       localStorage.setItem("_quantityAutoClick2", _quantityAutoClick2);
     }
-    //   document.getElementById("auto2").innerHTML = "M:" + autoClick2multiplier;
   }
 
   if (manualclick1 == 'autoclick1') {
@@ -152,11 +141,7 @@ function manualupgrade(manualclick1) {
       x.quantity = _quantityAutoClick1;
       localStorage.setItem("_quantityAutoClick1", _quantityAutoClick1);
     }
-    //   document.getElementById("auto1").innerHTML = "M:" + autoClick1multiplier;
   }
-
-  //displaybtnInfo();
-
   //Fecth the current information from th object based on the passed parameter
   displayInventory();
 }
@@ -298,4 +283,3 @@ function Autobtn(btnclk) {
 }
 
 displayInventory();
-
